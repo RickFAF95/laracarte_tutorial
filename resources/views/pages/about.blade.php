@@ -1,9 +1,9 @@
-@extends('layouts.master', ['title' => 'Home'])
+@extends('layouts.master', ['title' => 'About'])
 @section('content')
     <div class="container">
-        <h2> What is Laracarte? </h2>
+        <h2> What is {{ config('app.name') }}? </h2>
         <p>
-            Laracarte is a clone app of <a href="https://laramap.com">Laramap.com</a>.
+            {{ config('app.name') }} is a clone app of <a href="https://laramap.com">Laramap.com</a>.
         </p>
         <div class="row">
             <div class="col-md-6">
@@ -12,13 +12,13 @@
                 </p>
             </div>
         </div>
-        <p> Feel free to help to improve the <a href="#">source code</a>. </p>
+        <p> Feel free to help to improve the <a href="https://github.com/RickFAF95/{{ config('app.name') }}_tutorial">source code</a>. </p>
         <hr>
         <h2> What is Laramap? </h2>
-        <p> Laramap is a website by which Laracarte was inspired </p>
+        <p> Laramap is a website by which {{ config('app.name') }} was inspired </p>
         <p> More infos <a href="https://laramap.com/p/about">here</a>. </p>
         <hr>
-        <h2> Which tools and services are used in laracarte? </h2>
+        <h2> Which tools and services are used in {{ config('app.name') }}? </h2>
         <p> Basically it's built on Laravel &amp; Bootstrap. But there's a bunch of services used for email
         and other sections.</p>
         <ul>
