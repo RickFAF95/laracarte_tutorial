@@ -20,3 +20,7 @@ Route::name('home')->get('/', 'PagesController@home');
 Route::name('about')->get('/about', 'PagesController@about');
 Route::name('contact.create')->get('/contact', 'MessagesController@create');
 Route::name('contact.store')->post('/contact', 'MessagesController@store');
+Route::get('/test-email', function () {
+    return new \App\Mail\ContactMessageCreated('Emérick FAFOLAHAN', 'rickfaf1@gmail.com',
+        'Merci pour cette merveilleuse application');
+});
